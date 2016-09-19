@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="FKLInputView" id="iN0-l3-epB" customClass="FKLInputView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSs-lb-66t">
+                    <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="Su1-7e-Hh0"/>
+                    </constraints>
+                    <state key="normal" image="ToolViewInputVoice"/>
+                    <state key="highlighted" image="ToolViewInputVoiceHL"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jt0-he-cZc">
+                    <rect key="frame" x="331" y="0.0" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="Bif-h5-Wtm"/>
+                    </constraints>
+                    <state key="normal" image="TypeSelectorBtn_Black"/>
+                    <state key="highlighted" image="TypeSelectorBtnHL_Black"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MnY-p9-cU3">
+                    <rect key="frame" x="287" y="0.0" width="44" height="44"/>
+                    <state key="normal" image="ToolViewEmotion"/>
+                    <state key="highlighted" image="ToolViewEmotionHL"/>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JQe-Rf-xBu">
+                    <rect key="frame" x="44" y="5" width="243" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="send" enablesReturnKeyAutomatically="YES"/>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BAY-1p-PNA">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="Z69-IR-Obx"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="JQe-Rf-xBu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="584-FY-HkP"/>
+                <constraint firstItem="MnY-p9-cU3" firstAttribute="width" secondItem="jt0-he-cZc" secondAttribute="width" id="5FL-iW-Jna"/>
+                <constraint firstItem="BAY-1p-PNA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7tK-V8-9hh"/>
+                <constraint firstItem="BAY-1p-PNA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9WF-ML-gjU"/>
+                <constraint firstAttribute="bottom" secondItem="JQe-Rf-xBu" secondAttribute="bottom" constant="5" id="CpH-8P-jM8"/>
+                <constraint firstItem="iSs-lb-66t" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="CzA-rU-Xxn"/>
+                <constraint firstItem="JQe-Rf-xBu" firstAttribute="leading" secondItem="iSs-lb-66t" secondAttribute="trailing" id="IDo-eA-1qM"/>
+                <constraint firstItem="MnY-p9-cU3" firstAttribute="bottom" secondItem="jt0-he-cZc" secondAttribute="bottom" id="M3z-lP-Bb2"/>
+                <constraint firstItem="jt0-he-cZc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="NHw-8Y-FEP"/>
+                <constraint firstItem="MnY-p9-cU3" firstAttribute="leading" secondItem="JQe-Rf-xBu" secondAttribute="trailing" id="TwL-l2-iJC"/>
+                <constraint firstAttribute="bottom" secondItem="jt0-he-cZc" secondAttribute="bottom" id="YFd-4U-5e6"/>
+                <constraint firstAttribute="bottom" secondItem="iSs-lb-66t" secondAttribute="bottom" id="fkr-Lx-CwA"/>
+                <constraint firstItem="iSs-lb-66t" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qJG-FZ-Nx6"/>
+                <constraint firstItem="jt0-he-cZc" firstAttribute="leading" secondItem="MnY-p9-cU3" secondAttribute="trailing" id="xhs-Bb-mPz"/>
+                <constraint firstAttribute="trailing" secondItem="BAY-1p-PNA" secondAttribute="trailing" id="yYu-ZP-sfs"/>
+                <constraint firstAttribute="trailing" secondItem="jt0-he-cZc" secondAttribute="trailing" id="z41-ih-Oma"/>
+                <constraint firstItem="MnY-p9-cU3" firstAttribute="top" secondItem="jt0-he-cZc" secondAttribute="top" id="zFx-YR-0pU"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="textField" destination="JQe-Rf-xBu" id="IHC-ho-2lR"/>
+            </connections>
+            <point key="canvasLocation" x="336.5" y="387"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ToolViewEmotion" width="35" height="35"/>
+        <image name="ToolViewEmotionHL" width="35" height="35"/>
+        <image name="ToolViewInputVoice" width="35" height="35"/>
+        <image name="ToolViewInputVoiceHL" width="35" height="35"/>
+        <image name="TypeSelectorBtnHL_Black" width="35" height="35"/>
+        <image name="TypeSelectorBtn_Black" width="35" height="35"/>
+    </resources>
+</document>

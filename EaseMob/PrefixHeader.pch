@@ -1,0 +1,20 @@
+//
+//  PrefixHeader.pch
+//  EaseMob
+//
+//  Created by kun on 16/9/10.
+//  Copyright © 2016年 kun. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "EaseMob.h"
+
+#import <SVProgressHUD.h>
+#import <JDStatusBarNotification.h>
+
+#define MainStoryBoard(storyBoard) [UIStoryboard storyboardWithName:[NSString stringWithFormat:@"%@", storyBoard] bundle:nil]
+#define kBackground243Color [UIColor colorWithRed:243 / 255.0 green:243 / 255.0 blue:243 / 255.0 alpha:1.0]
+
+#endif /* PrefixHeader_pch */
